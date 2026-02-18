@@ -6,17 +6,7 @@ A web-based assessment tool that evaluates the data maturity of 10 business doma
 
 ---
 
-## 🎬 Video Walkthrough
-
-### Part 1 — Executive Overview
-![Executive Overview Walkthrough](images/walkthrough_part1.webp)
-
-### Part 2 — Domain Comparison & Deep Dive
-![Comparison & Deep Dive Walkthrough](images/walkthrough_part2.webp)
-
----
-
-## 🏗️ What It Measures
+## ️ What It Measures
 
 The dashboard assesses **10 WEPA data domains** against the **4 pillars** of Data Mesh, with **24 questions** total:
 
