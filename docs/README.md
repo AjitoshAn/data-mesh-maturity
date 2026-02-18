@@ -90,7 +90,7 @@ Any team member can **override scores** using the dropdown next to each question
 
 ![Score Override Demo](images/08_score_override.png)
 
-> **Note:** Score overrides are session-based. Refreshing the page resets to the data-computed defaults.
+> **Note:** Score overrides are **saved to the backend** and persist across page refreshes and sessions. All team members see the same overridden scores.
 
 ---
 
