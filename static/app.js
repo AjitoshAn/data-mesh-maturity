@@ -93,6 +93,23 @@ async function fetchDomainDetail(name) {
     return res.json();
 }
 
+async function fetchOverrides() {
+    const res = await fetch('/api/overrides');
+    return res.json();
+}
+
+async function saveOverride(domain, questionId, score) {
+    try {
+        await fetch('/api/override', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ domain, questionId, score }),
+        });
+    } catch (e) {
+        console.error('Failed to save override:', e);
+    }
+}
+
 // ---- Navigation ----
 document.querySelectorAll('.nav-btn').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -107,7 +124,12 @@ document.querySelectorAll('.nav-btn').forEach(tab => {
 // ---- Initialize ----
 async function init() {
     try {
-        const [domains, overview] = await Promise.all([fetchDomains(), fetchOverview()]);
+        const [domains, overview, savedOverrides] = await Promise.all([
+            fetchDomains(), fetchOverview(), fetchOverrides()
+        ]);
+
+        // Restore persisted overrides into frontend state
+        scoreOverrides = savedOverrides || {};
 
         // Sort by overall score descending for Executive View
         overview.matrix.sort((a, b) => (b.overall || 0) - (a.overall || 0));
@@ -573,6 +595,9 @@ window.handleScoreChange = function (selectEl) {
     } else {
         delete scoreOverrides[domain][qId];
     }
+
+    // Persist override to backend
+    saveOverride(domain, qId, newScore);
 
     // 4. Recalculate aggregates
     recalcDomainAggregates(currentDomainData);
