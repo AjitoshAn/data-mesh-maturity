@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mesh Maturity Assessment | WEPA</title>
+    <meta name="description"
+        content="Interactive dashboard for assessing data domain maturity across Microsoft Fabric environments">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <!-- Top accent stripe -->
+    <div class="accent-line"></div>
+
+    <!-- Header — full-width navy, content centered -->
+    <header class="header">
+        <div class="header-content">
+
+            <div class="header-text">
+                <h1>Data Mesh Maturity</h1>
+                <span class="header-sub">WEPA Hygiene · Domain Assessment Dashboard</span>
+            </div>
+            <div class="header-metrics">
+                <div class="header-metric">
+                    <span class="metric-num" id="header-domains">—</span>
+                    <span class="metric-label">Domains</span>
+                </div>
+                <div class="header-sep"></div>
+                <div class="header-metric">
+                    <span class="metric-num" id="header-avg">—</span>
+                    <span class="metric-label">Avg Score</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <button class="nav-btn active" data-view="overview">
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+                    <rect x="1" y="1" width="6" height="6" rx="1.5" />
+                    <rect x="9" y="1" width="6" height="6" rx="1.5" />
+                    <rect x="1" y="9" width="6" height="6" rx="1.5" />
+                    <rect x="9" y="9" width="6" height="6" rx="1.5" />
+                </svg>
+                Executive Overview
+            </button>
+            <button class="nav-btn" data-view="comparison">
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1L14.93 5.5V14.5H1.07V5.5L8 1Z" />
+                </svg>
+                Domain Comparison
+            </button>
+            <button class="nav-btn" data-view="detail">
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+                    <rect x="1" y="2" width="14" height="2" rx="1" />
+                    <rect x="1" y="7" width="10" height="2" rx="1" />
+                    <rect x="1" y="12" width="12" height="2" rx="1" />
+                </svg>
+                Domain Deep Dive
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- === OVERVIEW === -->
+        <section id="view-overview" class="view active">
+            <div class="page-intro">
+                <span class="eyebrow">Organization Overview</span>
+                <h2>Maturity Heatmap</h2>
+                <p>How each domain scores across the four data mesh pillars — click any row to explore</p>
+            </div>
+
+            <div class="card full-card">
+                <table class="heatmap-table" id="heatmap-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="two-col">
+                <div class="card">
+                    <h3 class="card-title">Score Distribution</h3>
+                    <canvas id="chart-distribution"></canvas>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Maturity Bands</h3>
+                    <div id="band-summary" class="band-summary"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === COMPARISON === -->
+        <section id="view-comparison" class="view">
+            <div class="page-intro">
+                <span class="eyebrow">Cross-Domain Analysis</span>
+                <h2>Domain Comparison</h2>
+                <p>Overlay domains on a radar chart to spot strengths, gaps, and convergence patterns</p>
+            </div>
+
+            <div class="card" style="margin-bottom:20px">
+                <label
+                    style="font-size:0.78rem;font-weight:600;color:var(--muted);margin-bottom:10px;display:block">Select
+                    domains to compare</label>
+                <div id="domain-checkboxes" class="checkbox-group"></div>
+            </div>
+            <div class="card radar-card">
+                <canvas id="chart-radar"></canvas>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Pillar Rankings</h3>
+                <div id="pillar-rankings" class="rankings-grid"></div>
+            </div>
+        </section>
+
+        <!-- === DETAIL / DEEP DIVE === -->
+        <section id="view-detail" class="view">
+            <div class="page-intro">
+                <span class="eyebrow">Self-Assessment</span>
+                <h2>Domain Deep Dive</h2>
+                <p>Review and override each question's maturity score — defaults from data, adjustable via
+                    self-assessment</p>
+            </div>
+
+            <div class="domain-picker">
+                <select id="domain-select">
+                    <option value="">Choose a domain to assess…</option>
+                </select>
+            </div>
+
+            <!-- Empty state -->
+            <div id="detail-empty" class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="6" y="10" width="36" height="28" rx="3" />
+                    <path d="M6 18h36" />
+                    <circle cx="12" cy="14" r="1.5" fill="currentColor" stroke="none" />
+                    <circle cx="17" cy="14" r="1.5" fill="currentColor" stroke="none" />
+                    <circle cx="22" cy="14" r="1.5" fill="currentColor" stroke="none" />
+                    <path d="M14 26h20M14 32h12" />
+                </svg>
+                <h3>Select a domain above</h3>
+                <p>Choose a domain to view its maturity assessment, pillar scores, and question-level self-assessment
+                    controls</p>
+            </div>
+
+            <div id="detail-content" class="detail-content" style="display:none;">
+                <div class="stats-bar" id="domain-stats-bar"></div>
+                <div class="pillar-cards" id="pillar-cards"></div>
+                <div id="question-sections"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>Data Mesh Maturity Assessment · Powered by Microsoft Fabric Metadata</span>
+        <span class="footer-brand">WEPA Hygiene</span>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

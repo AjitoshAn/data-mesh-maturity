@@ -1,0 +1,102 @@
+{
+    "domains": [
+        "Commercial",
+        "Energy_Procurement",
+        "Finance_Controlling",
+        "Global",
+        "Operations",
+        "Procurement",
+        "Resilience",
+        "Supply_Chain_Management",
+        "Sustainability",
+        "Treasury"
+    ],
+    "matrix": [
+        {
+            "Data as a Product": 3.0,
+            "Domain Ownership": 4.17,
+            "Federated Governance": 2.33,
+            "Self-Serve Data Platform": 3.6,
+            "domain": "Commercial",
+            "overall": 3.42
+        },
+        {
+            "Data as a Product": 2.2,
+            "Domain Ownership": 3.33,
+            "Federated Governance": 3.33,
+            "Self-Serve Data Platform": 3.2,
+            "domain": "Energy_Procurement",
+            "overall": 3.0
+        },
+        {
+            "Data as a Product": 2.8,
+            "Domain Ownership": 4.0,
+            "Federated Governance": 2.67,
+            "Self-Serve Data Platform": 3.8,
+            "domain": "Finance_Controlling",
+            "overall": 3.42
+        },
+        {
+            "Data as a Product": 2.8,
+            "Domain Ownership": 4.0,
+            "Federated Governance": 2.67,
+            "Self-Serve Data Platform": 2.8,
+            "domain": "Global",
+            "overall": 3.16
+        },
+        {
+            "Data as a Product": 2.8,
+            "Domain Ownership": 3.83,
+            "Federated Governance": 2.67,
+            "Self-Serve Data Platform": 3.6,
+            "domain": "Operations",
+            "overall": 3.32
+        },
+        {
+            "Data as a Product": 2.8,
+            "Domain Ownership": 3.83,
+            "Federated Governance": 2.67,
+            "Self-Serve Data Platform": 4.0,
+            "domain": "Procurement",
+            "overall": 3.42
+        },
+        {
+            "Data as a Product": 3.0,
+            "Domain Ownership": 4.0,
+            "Federated Governance": 3.33,
+            "Self-Serve Data Platform": 3.4,
+            "domain": "Resilience",
+            "overall": 3.47
+        },
+        {
+            "Data as a Product": 3.0,
+            "Domain Ownership": 4.0,
+            "Federated Governance": 3.67,
+            "Self-Serve Data Platform": 3.4,
+            "domain": "Supply_Chain_Management",
+            "overall": 3.53
+        },
+        {
+            "Data as a Product": 2.6,
+            "Domain Ownership": 4.0,
+            "Federated Governance": 2.33,
+            "Self-Serve Data Platform": 2.4,
+            "domain": "Sustainability",
+            "overall": 2.95
+        },
+        {
+            "Data as a Product": 2.6,
+            "Domain Ownership": 3.33,
+            "Federated Governance": 2.0,
+            "Self-Serve Data Platform": 3.6,
+            "domain": "Treasury",
+            "overall": 3.0
+        }
+    ],
+    "pillars": [
+        "Domain Ownership",
+        "Data as a Product",
+        "Self-Serve Data Platform",
+        "Federated Governance"
+    ]
+}

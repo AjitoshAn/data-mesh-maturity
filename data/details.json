@@ -1,0 +1,3102 @@
+{
+  "Commercial": {
+    "domain": "Commercial",
+    "metrics": {
+      "audit_trail_pct": 0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 56.6,
+      "governance_automation": 10.1,
+      "item_description_pct": 71.8,
+      "metadata_richness": 100.0,
+      "metadata_standard_pct": 83.1,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 58.3,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 79.0,
+      "self_serve_pct": 100.0,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 100.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.42,
+    "pillars": [
+      {
+        "avg_score": 4.17,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.0,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.6,
+        "band": "Managed",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.33,
+        "band": "Developing",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "workspace_desc_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "item_description_pct: 71.8%",
+        "evidence_pct": 71.8,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "discoverability_pct: 56.6%",
+        "evidence_pct": 56.6,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 3,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "pipeline_autonomy: 58.3%",
+        "evidence_pct": 58.3,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 3,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "reusable_patterns: 79.0%",
+        "evidence_pct": 79.0,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_standard_pct: 83.1%",
+        "evidence_pct": 83.1,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 5,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "audit_trail_pct: 0%",
+        "evidence_pct": 0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 1,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "governance_automation: 10.1%",
+        "evidence_pct": 10.1,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 1,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 49,
+        "medallion_pct": 79.0,
+        "total": 62
+      },
+      "total_items": 99,
+      "workspaces": 3
+    }
+  },
+  "Energy_Procurement": {
+    "domain": "Energy_Procurement",
+    "metrics": {
+      "audit_trail_pct": 100.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 66.7,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 31.6,
+      "governance_automation": 46.8,
+      "item_description_pct": 42.1,
+      "metadata_richness": 50.0,
+      "metadata_standard_pct": 25.3,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 83.3,
+      "resource_capacity": 100,
+      "reusable_patterns": 2.0,
+      "self_serve_pct": 100.0,
+      "versioning_maturity": 66.7,
+      "workspace_desc_pct": 0.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.0,
+    "pillars": [
+      {
+        "avg_score": 3.33,
+        "band": "Defined",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.2,
+        "band": "Developing",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.2,
+        "band": "Defined",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.33,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "workspace_desc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "item_description_pct: 42.1%",
+        "evidence_pct": 42.1,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 83.3%",
+        "evidence_pct": 83.3,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 31.6%",
+        "evidence_pct": 31.6,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "metadata_richness: 50.0%",
+        "evidence_pct": 50.0,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 3,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "versioning_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "cicd_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "reusable_patterns: 2.0%",
+        "evidence_pct": 2.0,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "metadata_standard_pct: 25.3%",
+        "evidence_pct": 25.3,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "audit_trail_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 5,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "governance_automation: 46.8%",
+        "evidence_pct": 46.8,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 3,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": false,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 1,
+        "medallion_pct": 2.0,
+        "total": 50
+      },
+      "total_items": 152,
+      "workspaces": 4
+    }
+  },
+  "Finance_Controlling": {
+    "domain": "Finance_Controlling",
+    "metrics": {
+      "audit_trail_pct": 57.7,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 54.9,
+      "governance_automation": 9.7,
+      "item_description_pct": 78.6,
+      "metadata_richness": 79.9,
+      "metadata_standard_pct": 74.8,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 50.4,
+      "self_serve_pct": 86.0,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 69.2
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.42,
+    "pillars": [
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.8,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.8,
+        "band": "Managed",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.67,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "workspace_desc_pct: 69.2%",
+        "evidence_pct": 69.2,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "item_description_pct: 78.6%",
+        "evidence_pct": 78.6,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "discoverability_pct: 54.9%",
+        "evidence_pct": 54.9,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 3,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_richness: 79.9%",
+        "evidence_pct": 79.9,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "reusable_patterns: 50.4%",
+        "evidence_pct": 50.4,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 3,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 86.0%",
+        "evidence_pct": 86.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 74.8%",
+        "evidence_pct": 74.8,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "audit_trail_pct: 57.7%",
+        "evidence_pct": 57.7,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 3,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "governance_automation: 9.7%",
+        "evidence_pct": 9.7,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 1,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 287,
+        "medallion_pct": 50.4,
+        "total": 570
+      },
+      "total_items": 998,
+      "workspaces": 13
+    }
+  },
+  "Global": {
+    "domain": "Global",
+    "metrics": {
+      "audit_trail_pct": 35.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 26.7,
+      "governance_automation": 29.4,
+      "item_description_pct": 41.4,
+      "metadata_richness": 87.5,
+      "metadata_standard_pct": 60.8,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 37.5,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 13.9,
+      "self_serve_pct": 91.7,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 90.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.16,
+    "pillars": [
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.8,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.8,
+        "band": "Defined",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.67,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "workspace_desc_pct: 90.0%",
+        "evidence_pct": 90.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "item_description_pct: 41.4%",
+        "evidence_pct": 41.4,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 26.7%",
+        "evidence_pct": 26.7,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 87.5%",
+        "evidence_pct": 87.5,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "pipeline_autonomy: 37.5%",
+        "evidence_pct": 37.5,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 2,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "reusable_patterns: 13.9%",
+        "evidence_pct": 13.9,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 91.7%",
+        "evidence_pct": 91.7,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 60.8%",
+        "evidence_pct": 60.8,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "audit_trail_pct: 35.0%",
+        "evidence_pct": 35.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "governance_automation: 29.4%",
+        "evidence_pct": 29.4,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 5,
+        "medallion_pct": 13.9,
+        "total": 36
+      },
+      "total_items": 165,
+      "workspaces": 10
+    }
+  },
+  "Operations": {
+    "domain": "Operations",
+    "metrics": {
+      "audit_trail_pct": 50.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 23.6,
+      "governance_automation": 38.1,
+      "item_description_pct": 39.2,
+      "metadata_richness": 87.5,
+      "metadata_standard_pct": 55.5,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 32.1,
+      "self_serve_pct": 83.3,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 80.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.32,
+    "pillars": [
+      {
+        "avg_score": 3.83,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.8,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.6,
+        "band": "Managed",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.67,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "workspace_desc_pct: 80.0%",
+        "evidence_pct": 80.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "item_description_pct: 39.2%",
+        "evidence_pct": 39.2,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 2,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 23.6%",
+        "evidence_pct": 23.6,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 87.5%",
+        "evidence_pct": 87.5,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "reusable_patterns: 32.1%",
+        "evidence_pct": 32.1,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 2,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 83.3%",
+        "evidence_pct": 83.3,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "metadata_standard_pct: 55.5%",
+        "evidence_pct": 55.5,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 3,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "audit_trail_pct: 50.0%",
+        "evidence_pct": 50.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 3,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "governance_automation: 38.1%",
+        "evidence_pct": 38.1,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 25,
+        "medallion_pct": 32.1,
+        "total": 78
+      },
+      "total_items": 271,
+      "workspaces": 5
+    }
+  },
+  "Procurement": {
+    "domain": "Procurement",
+    "metrics": {
+      "audit_trail_pct": 25.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 37.9,
+      "governance_automation": 35.5,
+      "item_description_pct": 53.4,
+      "metadata_richness": 93.8,
+      "metadata_standard_pct": 62.0,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 83.7,
+      "self_serve_pct": 75.0,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 75.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.42,
+    "pillars": [
+      {
+        "avg_score": 3.83,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.8,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.67,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "workspace_desc_pct: 75.0%",
+        "evidence_pct": 75.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "item_description_pct: 53.4%",
+        "evidence_pct": 53.4,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 37.9%",
+        "evidence_pct": 37.9,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 93.8%",
+        "evidence_pct": 93.8,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "reusable_patterns: 83.7%",
+        "evidence_pct": 83.7,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "self_serve_pct: 75.0%",
+        "evidence_pct": 75.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 62.0%",
+        "evidence_pct": 62.0,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "audit_trail_pct: 25.0%",
+        "evidence_pct": 25.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "governance_automation: 35.5%",
+        "evidence_pct": 35.5,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 41,
+        "medallion_pct": 83.7,
+        "total": 49
+      },
+      "total_items": 124,
+      "workspaces": 4
+    }
+  },
+  "Resilience": {
+    "domain": "Resilience",
+    "metrics": {
+      "audit_trail_pct": 100.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 66.7,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 61.2,
+      "governance_automation": 9.6,
+      "item_description_pct": 80.2,
+      "metadata_richness": 95.2,
+      "metadata_standard_pct": 68.1,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 83.3,
+      "resource_capacity": 100,
+      "reusable_patterns": 38.0,
+      "self_serve_pct": 100.0,
+      "versioning_maturity": 66.7,
+      "workspace_desc_pct": 50.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.47,
+    "pillars": [
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.0,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.4,
+        "band": "Defined",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.33,
+        "band": "Defined",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "workspace_desc_pct: 50.0%",
+        "evidence_pct": 50.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "item_description_pct: 80.2%",
+        "evidence_pct": 80.2,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 83.3%",
+        "evidence_pct": 83.3,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "discoverability_pct: 61.2%",
+        "evidence_pct": 61.2,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 95.2%",
+        "evidence_pct": 95.2,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "versioning_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "cicd_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "reusable_patterns: 38.0%",
+        "evidence_pct": 38.0,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 2,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 68.1%",
+        "evidence_pct": 68.1,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "audit_trail_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 5,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "governance_automation: 9.6%",
+        "evidence_pct": 9.6,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 1,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": false,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 82,
+        "medallion_pct": 38.0,
+        "total": 216
+      },
+      "total_items": 343,
+      "workspaces": 4
+    }
+  },
+  "Supply_Chain_Management": {
+    "domain": "Supply_Chain_Management",
+    "metrics": {
+      "audit_trail_pct": 100,
+      "automation_pct": 0.0,
+      "cicd_maturity": 100.0,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 42.7,
+      "governance_automation": 30.6,
+      "item_description_pct": 52.9,
+      "metadata_richness": 88.4,
+      "metadata_standard_pct": 71.7,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 100.0,
+      "resource_capacity": 100,
+      "reusable_patterns": 18.2,
+      "self_serve_pct": 100.0,
+      "versioning_maturity": 100.0,
+      "workspace_desc_pct": 100.0
+    },
+    "overall_band": "Managed",
+    "overall_score": 3.53,
+    "pillars": [
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.0,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.4,
+        "band": "Defined",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.67,
+        "band": "Managed",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "workspace_desc_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "item_description_pct: 52.9%",
+        "evidence_pct": 52.9,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "discoverability_pct: 42.7%",
+        "evidence_pct": 42.7,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 3,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 88.4%",
+        "evidence_pct": 88.4,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "versioning_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "cicd_maturity: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "reusable_patterns: 18.2%",
+        "evidence_pct": 18.2,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 71.7%",
+        "evidence_pct": 71.7,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "audit_trail_pct: 100%",
+        "evidence_pct": 100,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 5,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "governance_automation: 30.6%",
+        "evidence_pct": 30.6,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": true,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 28,
+        "medallion_pct": 18.2,
+        "total": 154
+      },
+      "total_items": 337,
+      "workspaces": 4
+    }
+  },
+  "Sustainability": {
+    "domain": "Sustainability",
+    "metrics": {
+      "audit_trail_pct": 20.0,
+      "automation_pct": 0.0,
+      "cicd_maturity": 66.7,
+      "data_product_doc_pct": 1.6,
+      "discoverability_pct": 26.7,
+      "governance_automation": 13.5,
+      "item_description_pct": 72.9,
+      "metadata_richness": 93.5,
+      "metadata_standard_pct": 67.7,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 35.0,
+      "product_usability": 0.0,
+      "publish_autonomy": 83.3,
+      "resource_capacity": 100,
+      "reusable_patterns": 33.3,
+      "self_serve_pct": 47.8,
+      "versioning_maturity": 66.7,
+      "workspace_desc_pct": 60.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 2.95,
+    "pillars": [
+      {
+        "avg_score": 4.0,
+        "band": "Managed",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.6,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.4,
+        "band": "Developing",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.33,
+        "band": "Developing",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "workspace_desc_pct: 60.0%",
+        "evidence_pct": 60.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "item_description_pct: 72.9%",
+        "evidence_pct": 72.9,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 4,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 83.3%",
+        "evidence_pct": 83.3,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 1.6%",
+        "evidence_pct": 1.6,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 26.7%",
+        "evidence_pct": 26.7,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 93.5%",
+        "evidence_pct": 93.5,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "versioning_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "pipeline_autonomy: 35.0%",
+        "evidence_pct": 35.0,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 2,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "cicd_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "reusable_patterns: 33.3%",
+        "evidence_pct": 33.3,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 2,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "self_serve_pct: 47.8%",
+        "evidence_pct": 47.8,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 3,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "metadata_standard_pct: 67.7%",
+        "evidence_pct": 67.7,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 4,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "audit_trail_pct: 20.0%",
+        "evidence_pct": 20.0,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "governance_automation: 13.5%",
+        "evidence_pct": 13.5,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 1,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": false,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 15,
+        "medallion_pct": 33.3,
+        "total": 45
+      },
+      "total_items": 176,
+      "workspaces": 5
+    }
+  },
+  "Treasury": {
+    "domain": "Treasury",
+    "metrics": {
+      "audit_trail_pct": 37.5,
+      "automation_pct": 0.0,
+      "cicd_maturity": 66.7,
+      "data_product_doc_pct": 0.0,
+      "discoverability_pct": 39.6,
+      "governance_automation": 30.1,
+      "item_description_pct": 50.0,
+      "metadata_richness": 100.0,
+      "metadata_standard_pct": 30.0,
+      "ops_analytics_coverage": 100,
+      "owner_tag_pct": 0.0,
+      "pipeline_autonomy": 100,
+      "product_usability": 0.0,
+      "publish_autonomy": 83.3,
+      "resource_capacity": 100,
+      "reusable_patterns": 59.1,
+      "self_serve_pct": 100.0,
+      "versioning_maturity": 66.7,
+      "workspace_desc_pct": 0.0
+    },
+    "overall_band": "Defined",
+    "overall_score": 3.0,
+    "pillars": [
+      {
+        "avg_score": 3.33,
+        "band": "Defined",
+        "name": "Domain Ownership",
+        "scored_count": 6,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.6,
+        "band": "Defined",
+        "name": "Data as a Product",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 3.6,
+        "band": "Managed",
+        "name": "Self-Serve Data Platform",
+        "scored_count": 5,
+        "total_count": 6
+      },
+      {
+        "avg_score": 2.0,
+        "band": "Developing",
+        "name": "Federated Governance",
+        "scored_count": 3,
+        "total_count": 6
+      }
+    ],
+    "questions": [
+      {
+        "band": "Initial",
+        "evidence_detail": "owner_tag_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO1",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Is there a clearly assigned data owner responsible for the domain's data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "workspace_desc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DO2",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 1,
+        "text": "Are roles and responsibilities for data stewardship clearly defined?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "ops_analytics_coverage: 100%",
+        "evidence_pct": 100,
+        "id": "DO3",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain maintain ownership of both operational and analytical data?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "item_description_pct: 50.0%",
+        "evidence_pct": 50.0,
+        "id": "DO4",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 3,
+        "text": "Is the domain accountable for data quality and data lifecycle management?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "publish_autonomy: 83.3%",
+        "evidence_pct": 83.3,
+        "id": "DO5",
+        "mode": "auto",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Are domain teams empowered to make decisions about data modeling and publishing?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "resource_capacity: 100%",
+        "evidence_pct": 100,
+        "id": "DO6",
+        "mode": "semi",
+        "pillar": "Domain Ownership",
+        "score": 5,
+        "text": "Does the domain have sufficient resources (skills, capacity) to own its data?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "data_product_doc_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP1",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Does the domain publish data as products with clear documentation and SLAs?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "discoverability_pct: 39.6%",
+        "evidence_pct": 39.6,
+        "id": "DP2",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 2,
+        "text": "Are data products easy to discover through a central catalog?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "metadata_richness: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "DP3",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 5,
+        "text": "Do data products include metadata such as lineage, owners, quality metrics?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "product_usability: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "DP4",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 1,
+        "text": "Are consumers able to easily understand and use the data products?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "versioning_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "DP5",
+        "mode": "auto",
+        "pillar": "Data as a Product",
+        "score": 4,
+        "text": "Are versioning, changes, and updates to data products managed consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "DP6",
+        "mode": "manual",
+        "pillar": "Data as a Product",
+        "score": null,
+        "text": "Does the domain collect feedback from consumers to improve data products?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "pipeline_autonomy: 100%",
+        "evidence_pct": 100,
+        "id": "SP1",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Can the domain independently create and maintain data pipelines?"
+      },
+      {
+        "band": "Managed",
+        "evidence_detail": "cicd_maturity: 66.7%",
+        "evidence_pct": 66.7,
+        "id": "SP2",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 4,
+        "text": "Does the domain use CI/CD or automated deployment for data products?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "SP3",
+        "mode": "manual",
+        "pillar": "Self-Serve Data Platform",
+        "score": null,
+        "text": "Are platform tools intuitive and accessible without deep engineering help?"
+      },
+      {
+        "band": "Initial",
+        "evidence_detail": "automation_pct: 0.0%",
+        "evidence_pct": 0.0,
+        "id": "SP4",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 1,
+        "text": "Is monitoring and alerting of data pipelines automated?"
+      },
+      {
+        "band": "Defined",
+        "evidence_detail": "reusable_patterns: 59.1%",
+        "evidence_pct": 59.1,
+        "id": "SP5",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 3,
+        "text": "Are there reusable templates or components for pipeline creation?"
+      },
+      {
+        "band": "Optimized",
+        "evidence_detail": "self_serve_pct: 100.0%",
+        "evidence_pct": 100.0,
+        "id": "SP6",
+        "mode": "auto",
+        "pillar": "Self-Serve Data Platform",
+        "score": 5,
+        "text": "Does the domain rely minimally on central IT for operational tasks?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "metadata_standard_pct: 30.0%",
+        "evidence_pct": 30.0,
+        "id": "FG1",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Does the domain follow global standards for metadata and documentation?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG2",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are data quality rules automatically enforced?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG3",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Are security and privacy controls (e.g., PII masking) applied consistently?"
+      },
+      {
+        "band": "Not Assessed",
+        "evidence_detail": "Requires manual stakeholder assessment",
+        "evidence_pct": null,
+        "id": "FG4",
+        "mode": "manual",
+        "pillar": "Federated Governance",
+        "score": null,
+        "text": "Does the domain participate in federated governance decision-making?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "audit_trail_pct: 37.5%",
+        "evidence_pct": 37.5,
+        "id": "FG5",
+        "mode": "semi",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are compliance and audit requirements built into data processes?"
+      },
+      {
+        "band": "Developing",
+        "evidence_detail": "governance_automation: 30.1%",
+        "evidence_pct": 30.1,
+        "id": "FG6",
+        "mode": "auto",
+        "pillar": "Federated Governance",
+        "score": 2,
+        "text": "Are governance policies implemented through automation rather than manual work?"
+      }
+    ],
+    "stats": {
+      "has_dev": true,
+      "has_prod": false,
+      "has_test": true,
+      "notebook_patterns": {
+        "medallion_count": 55,
+        "medallion_pct": 59.1,
+        "total": 93
+      },
+      "total_items": 187,
+      "workspaces": 4
+    }
+  }
+}
